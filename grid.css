@@ -1,0 +1,65 @@
+.Row {
+/*	width: 1000px; */ /* should be defined in container */
+	margin: 0 auto;
+	overflow: hidden;
+	/*zoom: 1;*/ /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Clear fix for modern browsers */
+.Row:before, .Row:after {  content: ""; display: table; }
+.Row:after { clear:both; }
+
+.Column,
+.Column00,
+.Column33,
+.Column66,
+.Column05,
+.Column10,
+.Column15,
+.Column20,
+.Column25,
+.Column30,
+.Column35,
+.Column40,
+.Column44,
+.Column50,
+.Column50,
+.Column55,
+.Column60,
+.Column65,
+.Column70,
+.Column75,
+.Column80,
+.Column85,
+.Column90,
+.Column95 {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 0.8%;
+	overflow: hidden;
+	float: left;
+}
+
+div[class^=Column]:first-of-type {
+	padding-left: 0;
+}
+
+div[class^=Column]:last-of-type {
+	padding-right: 0;
+}
+
+
+.Column, .Column00  { width: 100% }
+.Column33 { width: 33.333% }
+.Column66 { width: 66.666% }
+.Column05 { width: 5% }
+.Column10 { width: 10% }
+.Column20 { width: 20% }
+.Column30 { width: 30% }
+.Column40 { width: 40% }
+.Column50 { width: 50% }
+.Column60 { width: 60% }
+.Column70 { width: 70% }
+.Column80 { width: 80% }
+.Column90 { width: 90% }
