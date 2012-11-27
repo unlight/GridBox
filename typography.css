@@ -1,0 +1,36 @@
+.Hidden {
+	display: none;
+}
+
+.Invisible {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.Deleted {
+	text-decoration: line-through;
+}
+
+.NoWrap {
+	white-space: nowrap;
+}
+
+.Center {
+	text-align: center;
+}
+
+.Right {
+	text-align: right;
+}
+
+p, .P {
+   margin: 1em 0;
+}
+
+div > p:first-child {
+	margin-top: 0;
+}
+
+div > p:last-child {
+	margin-bottom: 0;
+}
