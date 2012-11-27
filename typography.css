@@ -1,0 +1,14 @@
+body {
+	line-height: 1.3em;
+	font-size: 14px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+a.Button {
+	margin-left: 2px;
+	margin-right: 2px;
+}
