@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>GridBox v1.1</title>
-	<link rel="stylesheet" href="grid.css" type="text/css" media="screen" charset="utf-8" />
+	<title>GridBox v1.2</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
 	<!--[if lt IE 8 ]>
 	<script src="grid.js" type="text/javascript" charset="utf-8"></script>
 	<![endif]-->
@@ -11,18 +11,13 @@
 	/*
 	 & A little bit of styling
 	 */
-	body {
-		font-family: Arial, sans-serif;
-		color: #000;
-	}
 	
 	h1 {
-		border: solid 1px black;
 		text-align: center;
 		padding: 10px;
 	}
 	
-	p {
+	div[class^=Column] > p {
 		font: 60px/100px Helvetica;
 		text-align: center;
 		border: 1px solid #000;
@@ -41,6 +36,8 @@
 <body>
 	
 	<div id="Body" class="Container">
+	
+	<h1>Grid</h1>
 		
 	<div class="Row">
 		<div class="Column00"><p>100</p></div>
@@ -78,8 +75,118 @@
 		</div>
 	</div>
 	
-	</div>
-		
 	
+	<div class="Row">
+	
+<h2>Horizontal Form (Left labels)</h2>
+	<form action="/" class="">
+		
+		<fieldset>
+			<label for="Name">Name</label>
+			<input type="text" class="InputBox" id="Name">
+			<p class="Help">This is help text under the form field.</p>
+		</fieldset>
+		
+		<fieldset>
+			<label for="Email">Email</label>
+			<input type="email" class="InputBox" id="Email">
+		</fieldset>
+		
+		<fieldset>
+			<label for="Gender">Gender</label>
+			<select id="Gender">
+				<option>Male</option>
+				<option>Female</option>
+				<option>Cylon</option>
+			</select>
+		</fieldset>
+
+		<fieldset class="RadioList">
+			<label for="Notifications">Notifications</label>
+			<ul>
+				<li><label><input type="radio" name="Notifications">Send me email</label></li>
+				<li><label><input type="radio" name="Notifications">Don't send me email</label></li>
+				<li><label><input type="radio" name="Notifications">Send me flowers</label></li>
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<label for="Url">URL</label>
+			<input type="url" placeholder="http://yourdomain.com" class="InputBox" id="Url">
+		</fieldset>
+
+		<fieldset>
+			<label for="Bio">Bio</label>
+			<textarea id="Bio"></textarea>
+		</fieldset>
+		
+		<fieldset class="CheckBox">
+			<label><input type="checkbox"> I accept the terms of service and lorem ipsum.</label>
+		</fieldset>
+
+		<fieldset class="Buttons">
+			<input type="submit" value="Submit" class="Button" />
+			<input type="reset" value="Reset" class="Button" />
+		</fieldset>
+	</form>			
+	</div>
+	
+	
+	<div class="Row">
+	
+<h2>Vertical Form (top labels)</h2>
+	<form action="/" class="VerticalForm">
+		
+		<fieldset>
+			<label for="Name">Name</label>
+			<input type="text" class="InputBox" id="Name">
+			<p class="Help">This is help text under the form field.</p>
+		</fieldset>
+		
+		<fieldset>
+			<label for="Email">Email</label>
+			<input type="email" class="InputBox" id="Email">
+		</fieldset>
+		
+		<fieldset>
+			<label for="Gender">Gender</label>
+			<select id="Gender">
+				<option>Male</option>
+				<option>Female</option>
+				<option>Cylon</option>
+			</select>
+		</fieldset>
+
+		<fieldset class="RadioList">
+			<label for="Notifications">Notifications</label>
+			<ul>
+				<li><label><input type="radio" name="Notifications">Send me email</label></li>
+				<li><label><input type="radio" name="Notifications">Don't send me email</label></li>
+				<li><label><input type="radio" name="Notifications">Send me flowers</label></li>
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<label for="Url">URL</label>
+			<input type="url" placeholder="http://yourdomain.com" class="InputBox" id="Url">
+		</fieldset>
+
+		<fieldset>
+			<label for="Bio">Bio</label>
+			<textarea id="Bio"></textarea>
+		</fieldset>
+		
+		<fieldset class="CheckBox">
+			<label><input type="checkbox"> I accept the terms of service and lorem ipsum.</label>
+		</fieldset>
+
+		<fieldset class="Buttons">
+			<input type="submit" value="Submit" class="Button" />
+			<input type="reset" value="Reset" class="Button" />
+		</fieldset>
+	</form>			
+	</div>
+
+	</div>
 </body>
 </html>
