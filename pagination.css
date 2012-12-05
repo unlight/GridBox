@@ -1,5 +1,8 @@
 nav.Page ul {
 	text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 nav.Page ul li {
 	display: inline;
