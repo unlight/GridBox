@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>GridBox v1.2</title>
+	<title>GridBox v1.3</title>
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<!--[if lt IE 8 ]>
 	<script src="grid.js" type="text/javascript" charset="utf-8"></script>
@@ -23,6 +23,10 @@
 		border: 1px solid #000;
 		margin: 0 0 20px 0;
 		border-radius: 5px;
+	}
+
+	body > .Row + .Row {
+		margin-top: 20px;
 	}
 	
 	#Body {
@@ -177,7 +181,7 @@
 		</fieldset>
 		
 		<fieldset class="CheckBox">
-			<label><input type="checkbox"> I accept the terms of service and lorem ipsum.</label>
+			<label><input type="checkbox">I accept the terms of service and lorem ipsum.</label>
 		</fieldset>
 
 		<fieldset class="Buttons">
@@ -185,6 +189,20 @@
 			<input type="reset" value="Reset" class="Button" />
 		</fieldset>
 	</form>			
+	</div>
+
+	<div class="Row">
+		<h2>Pagination</h2>
+		<nav class="Page">
+			<ul>
+				<li class="Prev"><a href="#">← Prev</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li class="Next"><a href="#">Next →</a></li>
+			</ul>
+		</nav>			
+				
 	</div>
 
 	</div>
