@@ -1,0 +1,23 @@
+[class~=Icon] {
+	font-weight: bold;
+}
+
+.IconHeart:before {
+	content: "\2764"
+}
+
+.IconPencil:before {
+	content: "\270e"
+}
+
+.IconFire:before {
+	content: "\1f525";
+}
+
+.IconSkull {
+	content: "\2620";
+}
+
+.IconBomb {
+	content: "\1f4a3";
+}
