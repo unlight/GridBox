@@ -6,18 +6,62 @@
 	content: "\2764"
 }
 
-.IconPencil:before {
+.IconPencil:before { /* LowerRightPencil */
 	content: "\270e"
+}
+
+.IconCross1:before {
+	content: "\274c"
 }
 
 .IconFire:before {
 	content: "\1f525";
 }
 
-.IconSkull {
+.IconBlackStar:before {
+	content: "\2605";
+}
+
+.IconSkullBones:before {
 	content: "\2620";
 }
 
-.IconBomb {
+.IconBomb:before {
 	content: "\1f4a3";
+}
+
+.IconThumbsUp:before {
+	content: "\1f44d";
+}
+
+.IconThumbsDown:before {
+	content: "\1f44e";
+}
+
+.IconPill:before {
+	content: "\1f48a";
+}
+
+.IconMoneyBag:before {
+	content: "\1f4b0";
+}
+
+.IconClipboard:before {
+	content: "\1f4cb";
+}
+
+.IconOutboxTray:before {
+	content: "\1f4e4";
+}
+
+.IconInboxTray:before {
+	content: "\1f4e5";
+}
+
+.IconSpeechBalloon:before {
+	content: "\1f4ac";
+}
+
+.IconWrench:before {
+	content: "\1f527";
 }
