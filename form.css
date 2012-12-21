@@ -21,8 +21,8 @@ fieldset select {
 }
 
 fieldset input[type="radio"] {
-	vertical-align: text-bottom;
 	margin-right: 0.5em;
+	vertical-align: -5%;
 }
 
 fieldset.RadioList ul {
