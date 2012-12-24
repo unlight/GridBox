@@ -22,7 +22,7 @@ fieldset select {
 
 fieldset input[type="radio"] {
 	margin-right: 0.5em;
-	vertical-align: -5%;
+	vertical-align: -10%;
 }
 
 fieldset.RadioList ul {
@@ -47,7 +47,7 @@ fieldset.RadioList ul li label {
 }
 
 fieldset input[type="checkbox"] {
-	vertical-align: middle;
+	vertical-align: -10%;
 	margin-right: 0.5em;
 }
 
@@ -147,7 +147,7 @@ fieldset p.Help {
 	border: solid transparent;
 	border-width: 0 0 100px 200px;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=50);
+	filter: alpha(opacity=0);
 	-moz-opacity: 0;
 	-khtml-opacity: 0;
 	opacity: 0;
@@ -163,6 +163,7 @@ fieldset p.Help {
 .Button.FileInput {
 	position: relative;
 	overflow: hidden;
+	vertical-align: -50%;
 }
 
 @media screen and (max-width: 600px) {
