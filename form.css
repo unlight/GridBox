@@ -2,10 +2,15 @@
 /* Horizontal form */
 fieldset {
 	border: 0;
-	margin: 0 0 10px 0;
+	/*margin: 0 0 10px 0;*/ /* use first child */
+	margin: 10px 0;
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid #eee;
 }
+
+/*form fieldset:first-child {
+	padding-top: 10px;
+}*/
 
 fieldset label {
 	float: left;
