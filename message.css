@@ -31,12 +31,20 @@ or
 	border: 1px solid #FFCCC9;
 }
 
-/*.ErrorMessage {
+.ErrorMessages {
 	border: 1px solid #a00;
 	background: #d50a0a;
 	padding: 6px 10px;
 	display: block;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-}*/
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #fff;
+	margin: 10px 0;
+}
+
+.ErrorMessages ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
