@@ -65,3 +65,33 @@ div > p:last-child {
 h1, h2, h3, h4, h5, h6 {
 	margin: 5px 0;
 }
+
+/*
+TODO:
+.Loading {}
+.Progress {}
+*/
+
+.Tiny {
+	font-size: 60%;
+}
+
+.Small {
+	font-size: 80%;
+}
+
+.Normal {
+	font-size: 100%;
+}
+
+.Medium {
+	font-size: 120%;
+}
+
+.Big {
+	font-size: 140%;
+}
+
+.Huge {
+	font-size: 180%;
+}
