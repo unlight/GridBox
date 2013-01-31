@@ -11,6 +11,7 @@
 @import url("form.css");
 @import url("pagination.css");
 @import url("tabs.css");
+@import url("menu.css");
 	</style>
 	<!--[if lt IE 8 ]>
 	<script src="grid.js" type="text/javascript" charset="utf-8"></script>
@@ -225,6 +226,29 @@
 	</div>
 	
 	<div class="Row">
+	<h2>Menu</h2>
+		<ul id="Menu" class="" style="margin-bottom: 80px"> <!-- SiteMenu -->
+		<li><a href="index.html">Home</a>
+		</li>
+		<li><a href="news.html">News</a>
+			<ul>
+				<li><a href="news.html">Category 1</a></li>
+				<li><a href="news.html">Category 2</a></li>
+			</ul>
+		</li>
+		<li><a href="about.html">Information</a>
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contacts.html">Contacts</a></li>
+				<li><a href="teachers.html">Our teachers</a></li>
+			</ul>
+		</li>
+
+		</ul>
+
+	</div>
+	
+	<div class="Row">
 	<h2>Tabs</h2>
 	
 	<nav role="navigation">
@@ -247,6 +271,8 @@
 <div class="Big">Big Font Size</div>
 <div class="Huge">Huge Font Size</div>
 	</div>
+	
+
 
 	</div>
 </body>
