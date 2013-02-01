@@ -51,7 +51,7 @@ a:hover {
 }
 
 p, .P {
-   margin: 5px 0;
+	margin: 5px 0;
 }
 
 div > p:first-child {
@@ -66,15 +66,43 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 5px 0;
 }
 
+.Clear:before, .Clear:after {  content: ""; display: table; }
+.Clear:after { clear:both; }
+
 .Wrap {
 	margin: 10px;
 }
 
-/*
-TODO:
-.Loading {}
-.Progress {}
-*/
+/* Loading indicators */
+.Loading {
+	height: 100px;
+	padding: 0 20px;
+	background: url('images/progress1.gif') center center no-repeat;
+}
+.InProgress {
+	color: transparent !important;
+	border-color: transparent !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	color: transparent !important;
+	text-shadow: none !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	padding: 0 !important;
+}
+
+.NormalProgress {
+	padding-right: 40px;
+	background: url('images/progress1.gif') right bottom no-repeat;
+}
+
+.TinyProgress {
+	padding-right: 25px;
+	background: url('images/progress2.gif') right bottom no-repeat;
+}
+
+/* Font size */
 
 .Tiny {
 	font-size: 60%;
