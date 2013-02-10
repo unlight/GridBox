@@ -103,6 +103,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: url('images/progress2.gif') right bottom no-repeat;
 }
 
+.NoDecoration {
+	text-decoration: none;
+}
+
 /* Font size */
 
 .Tiny {
