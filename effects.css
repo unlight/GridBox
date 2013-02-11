@@ -32,12 +32,15 @@
 
 @-moz-keyframes highlight {
 	0% { background-color: #ff8; }
+	50% { -moz-transform: scale(1.1) }
 }
 
 @-webkit-keyframes highlight {
 	0% { background-color: #ff8; }
+	50% { -webkit-transform: scale(1.1) }
 }
 
 @keyframes highlight {
 	0% { background-color: #ff8; }
+	50% { transform: scale(1.1) }
 }
