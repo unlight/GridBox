@@ -1,7 +1,8 @@
 .FadeIn {
-	animation-duration: 0.5s;
+/*	animation-duration: 0.5s;
 	animation-name: fade;
-	animation-direction: normal;
+	animation-direction: normal;*/
+	animation: 0.5s fade normal;
 }
 
 /*.FadeOut {
@@ -19,4 +20,24 @@
 	100% {
 		opacity: 1;
 	}
+}
+
+/* Yellow fade */
+
+:target, .Highlight {
+	-moz-animation: highlight 3s 1;
+	-webkit-animation: highlight 3s 1;
+	animation: highlight 3s 1;
+}
+
+@-moz-keyframes highlight {
+	0% { background-color: #ff8; }
+}
+
+@-webkit-keyframes highlight {
+	0% { background-color: #ff8; }
+}
+
+@keyframes highlight {
+	0% { background-color: #ff8; }
 }
