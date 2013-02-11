@@ -25,6 +25,10 @@ a:hover {
 	margin-right: 2px;
 }
 
+a.Button {
+	text-decoration: none;
+}
+
 .Hidden {
 	display: none;
 }
