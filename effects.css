@@ -24,7 +24,7 @@
 
 /* Yellow fade */
 
-:target, .Highlight {
+.YellowFade {
 	-moz-animation: highlight 3s 1;
 	-webkit-animation: highlight 3s 1;
 	animation: highlight 3s 1;
@@ -32,15 +32,15 @@
 
 @-moz-keyframes highlight {
 	0% { background-color: #ff8; }
-	50% { -moz-transform: scale(1.1) }
+	/*50% { -moz-transform: scale(1.1) }*/
 }
 
 @-webkit-keyframes highlight {
 	0% { background-color: #ff8; }
-	50% { -webkit-transform: scale(1.1) }
+	/*50% { -webkit-transform: scale(1.1) }*/
 }
 
 @keyframes highlight {
 	0% { background-color: #ff8; }
-	50% { transform: scale(1.1) }
+	/*50% { transform: scale(1.1) }*/
 }
