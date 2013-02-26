@@ -1,32 +1,32 @@
 /*
-<div class="MessageFrame">
-	<div class="InfoMessage">Hello!</div>
+<div class="MessageCollection">
+	<div class="Info">Hello!</div>
 </div>
 or
-<div class="InfoMessage MessageBody">Hello!</div>
+<div class="Message Info">Hello!</div>
  */
-.MessageFrame {
+.MessageCollection {
 	font-size: 110%;
 	padding: 4px 4px;
 	margin: 4px 8px;
 }
-.MessageBody {
+.Message {
 	padding: 4px 2px;
 }
-.CasualMessage {
+.Casual {
 	background: #CFECFF;
 	border: 1px solid #ABDAFB;
 	color: #1E79A7;
 }
-.InfoMessage {
+.Info {
 	background: #F6F6F6;
 	border: 1px solid #ddd;
 }
-.AlertMessage {
+.Alert {
 	background: #fff8ce;
 	border: 1px solid #DEDDAF;
 }
-.WarningMessage {
+.Warning {
 	background: #ffebe9;
 	border: 1px solid #FFCCC9;
 }
