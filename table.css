@@ -1,0 +1,28 @@
+table.Table {
+	width: 100%;
+}
+
+table.Table td, 
+table.Table th {
+	border-color: #eee;
+	border-width: 0px;
+	border-style: solid;
+	padding: 0 4px;
+}
+
+table.Table thead th,
+table.Table tbody td {
+	border-bottom-width: 1px;
+}
+
+table.Striped tbody tr:nth-child(2n+1) {
+	background: #fafafa;
+}
+
+table.Bordered td,
+table.Bordered th {
+	border-width: 1px;
+}
+
+table.Condensed {
+}
