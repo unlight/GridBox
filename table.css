@@ -26,3 +26,7 @@ table.Bordered th {
 
 table.Condensed {
 }
+
+.Table tr.Left th {
+	text-align: left
+}
