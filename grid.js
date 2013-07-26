@@ -57,7 +57,7 @@
 			var divs = [];
 			for (var index = 0; index < rows[i].childNodes.length; index++) {
 				var node = rows[i].childNodes[index];
-				if (node.className.indexOf("Column") === 0) divs.push(node);
+				if (node && node.className && node.className.indexOf("Column") === 0) divs.push(node);
 			}
 			if (columnGap == undefined && divs.length > 0) {
 				columnGap = parseFloat(divs[0].currentStyle.paddingLeft);
@@ -70,7 +70,6 @@
 				// var gaps = lastIndex;
 				if (divsLength > 1) {
 					var shrink = (1.01 * (2 * columnGap) * lastIndex) / divsLength;
-					//alert(["shrink", shrink, "currentStyle.width", currentStyle.width]);
 					var newWidth = parseInt(currentStyle.width, 10) - shrink + "%";
 					style.width = newWidth;
 				}

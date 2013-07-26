@@ -1,0 +1,43 @@
+.Tabs {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border-bottom: 1px solid #bbb;
+}
+
+.Tabs li {
+    display: inline-block;
+    margin: 0 4px 0 0;
+    padding: 0.75px 0;
+}
+
+.Tabs li a {
+	padding: 0 5px;
+	text-decoration: none;
+	background: #f5f5f5;
+	border: 1px solid #bbb;
+	border-bottom-width: 0;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.Tabs li a:hover,
+.Tabs li a:focus {
+
+}
+
+.Tabs li a:active {
+
+}
+
+.Tabs li.Active a {
+	background: #fff;  /* TabPane background color */
+	border-bottom-color: transparent; /* TabPane background color */
+	/* border-bottom-width value = border-bottom-width(.Tabs) + padding-bottom(.Tabs li) */
+	/* Increase if necessary */
+	border-bottom-width: 2px; 
+}

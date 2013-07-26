@@ -1,8 +1,16 @@
 .Row {
-/*	width: 1000px; */ /* should be defined in container */
 	margin: 0 auto;
 	overflow: hidden;
 	/*zoom: 1;*/ /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Width should be defined */
+/*.Row {
+	width: 960px;
+}*/
+
+.Row .Row {
+	width: auto;
 }
 
 /* Clear fix for modern browsers */
@@ -49,17 +57,25 @@ div[class^=Column]:last-of-type {
 	padding-right: 0;
 }
 
-
 .Column, .Column00  { width: 100% }
 .Column33 { width: 33.333% }
 .Column66 { width: 66.666% }
 .Column05 { width: 5% }
 .Column10 { width: 10% }
+.Column15 { width: 15% }
 .Column20 { width: 20% }
+.Column25 { width: 25% }
 .Column30 { width: 30% }
+.Column35 { width: 35% }
 .Column40 { width: 40% }
+.Column45 { width: 45% }
 .Column50 { width: 50% }
+.Column55 { width: 55% }
 .Column60 { width: 60% }
+.Column65 { width: 65% }
 .Column70 { width: 70% }
+.Column75 { width: 75% }
 .Column80 { width: 80% }
+.Column85 { width: 85% }
 .Column90 { width: 90% }
+.Column95 { width: 95% }

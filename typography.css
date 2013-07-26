@@ -1,0 +1,138 @@
+body {
+	line-height: 1.3em;
+	font-size: 14px;
+	font-family: 'Lucida Grande', 'Segoe UI', sans-serif;
+	color: #000;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.Button {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+a.Button {
+	text-decoration: none;
+}
+
+.Hidden {
+	display: none;
+}
+
+.Invisible {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.Deleted {
+	text-decoration: line-through;
+}
+
+.NoWrap {
+	white-space: nowrap;
+}
+
+.Center {
+	text-align: center;
+}
+
+.Right {
+	text-align: right;
+}
+
+p, .P {
+	margin: 5px 0;
+}
+
+div > p:first-child {
+	margin-top: 0;
+}
+
+div > p:last-child {
+	margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 5px 0;
+}
+
+.Clear {overflow: hidden}
+.Clear:before, .Clear:after {  content: ""; display: table; }
+.Clear:after { clear:both; }
+
+.Wrap {
+	margin: 10px;
+}
+
+/* Loading indicators */
+.Loading {
+	height: 100px;
+	padding: 0 20px;
+	background: url('images/progress1.gif') center center no-repeat;
+}
+.InProgress {
+	color: transparent !important;
+	border-color: transparent !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	color: transparent !important;
+	text-shadow: none !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	padding: 0 !important;
+}
+
+.NormalProgress {
+	padding-right: 40px;
+	background: url('images/progress1.gif') right bottom no-repeat;
+}
+
+.TinyProgress {
+	padding-right: 25px;
+	background: url('images/progress2.gif') right bottom no-repeat;
+}
+
+.NoDecoration {
+	text-decoration: none;
+}
+
+/* Font size */
+
+.Tiny {
+	font-size: 60%;
+}
+
+.Small {
+	font-size: 80%;
+}
+
+.Normal {
+	font-size: 100%;
+}
+
+.Medium {
+	font-size: 120%;
+}
+
+.Big {
+	font-size: 140%;
+}
+
+.Huge {
+	font-size: 180%;
+}

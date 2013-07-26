@@ -1,0 +1,50 @@
+/*
+<div class="MessageCollection">
+	<div class="Info">Hello!</div>
+</div>
+or
+<div class="Message Info">Hello!</div>
+ */
+.MessageCollection {
+	font-size: 110%;
+	padding: 4px 4px;
+	margin: 4px 8px;
+}
+.Message {
+	padding: 4px 4px;
+}
+.Casual {
+	background: #CFECFF;
+	border: 1px solid #ABDAFB;
+	color: #1E79A7;
+}
+.Info {
+	background: #F6F6F6;
+	border: 1px solid #ddd;
+}
+.Alert {
+	background: #fff8ce;
+	border: 1px solid #DEDDAF;
+}
+.Warning {
+	background: #ffebe9;
+	border: 1px solid #FFCCC9;
+}
+
+.ErrorMessages {
+	border: 1px solid #a00;
+	background: #d50a0a;
+	padding: 6px 10px;
+	display: block;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #fff;
+	margin: 10px 0;
+}
+
+.ErrorMessages ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}

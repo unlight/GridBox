@@ -2,32 +2,45 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>GridBox</title>
-	<link rel="stylesheet" href="grid.css" type="text/css" media="screen" charset="utf-8" />
+	<title>GridBox v1.8</title>
+	<style type="text/css">
+@import url("normalize.css");
+@import url("grid.css");
+@import url("typography.css");
+@import url("layout.css");
+@import url("form.css");
+@import url("pagination.css");
+@import url("tabs.css");
+@import url("menu.css");
+@import url("effects.css");
+@import url("message.css");
+	</style>
 	<!--[if lt IE 8 ]>
 	<script src="grid.js" type="text/javascript" charset="utf-8"></script>
 	<![endif]-->
 	<style type="text/css" media="screen">
+
+
 	/*
 	 & A little bit of styling
 	 */
-	body {
-		font-family: Arial, sans-serif;
-		color: #000;
-	}
 	
 	h1 {
-		border: solid 1px black;
 		text-align: center;
 		padding: 10px;
 	}
 	
-	p {
+	div[class^=Column] > p {
 		font: 60px/100px Helvetica;
 		text-align: center;
 		border: 1px solid #000;
 		margin: 0 0 20px 0;
 		border-radius: 5px;
+	}
+
+	.Row + .Row {
+		margin: 20px 0;
+		padding-bottom: 10px;
 	}
 	
 	#Body {
@@ -41,6 +54,8 @@
 <body>
 	
 	<div id="Body" class="Container">
+	
+	<h1>Grid</h1>
 		
 	<div class="Row">
 		<div class="Column00"><p>100</p></div>
@@ -78,8 +93,232 @@
 		</div>
 	</div>
 	
-	</div>
-		
 	
+	<div class="Row">
+	
+<h2>Horizontal Form (Left labels)</h2>
+	<form action="/" class="">
+
+		<fieldset>
+			<label for="File">File</label>
+			<a href="javascript:">old-file.jpg</a>
+			<a class="Button FileInput">
+				Upload <input id="File" type="file" />
+			</a>
+		</fieldset>
+		
+		<fieldset>
+			<label for="Name" class="Required">Name</label>
+			<input type="text" class="InputBox" id="Name">
+			<p class="Help">This is help text under the form field.</p>
+		</fieldset>
+		
+		<fieldset>
+			<label for="Email">Email</label>
+			<input type="email" class="InputBox" id="Email">
+		</fieldset>
+		
+		<fieldset>
+			<label for="Gender">Gender</label>
+			<select id="Gender">
+				<option>Male</option>
+				<option>Female</option>
+				<option>Cylon</option>
+			</select>
+		</fieldset>
+
+		<fieldset class="RadioList">
+			<label for="Notifications">Notifications</label>
+			<ul>
+				<li><label><input type="radio" name="Notifications">Send me email</label></li>
+				<li><label><input type="radio" name="Notifications">Don't send me email</label></li>
+				<li><label><input type="radio" name="Notifications">Send me flowers</label></li>
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<label for="Url">URL</label>
+			<input type="url" placeholder="http://yourdomain.com" class="InputBox" id="Url">
+		</fieldset>
+
+		<fieldset>
+			<label for="Bio">Bio</label>
+			<textarea id="Bio"></textarea>
+		</fieldset>
+		
+		<fieldset class="CheckBox">
+			<label><input type="checkbox"> I accept the terms of service and lorem ipsum.</label>
+		</fieldset>
+
+		<fieldset class="Buttons">
+			<input type="submit" value="Submit" class="Button" />
+			<input type="reset" value="Reset" class="Button" />
+		</fieldset>
+	</form>			
+	</div>
+	
+	
+	<div class="Row">
+	
+<h2>Vertical Form (top labels)</h2>
+	<form action="/" class="VerticalForm">
+		
+		<fieldset>
+			<label for="Name" class="Required">Name</label>
+			<input type="text" class="InputBox" id="Name">
+			<p class="Help">This is help text under the form field.</p>
+		</fieldset>
+		
+		<fieldset>
+			<label for="Email">Email</label>
+			<input type="email" class="InputBox" id="Email">
+		</fieldset>
+		
+		<fieldset>
+			<label for="Gender">Gender</label>
+			<select id="Gender">
+				<option>Male</option>
+				<option>Female</option>
+				<option>Cylon</option>
+			</select>
+		</fieldset>
+
+		<fieldset class="RadioList">
+			<label for="Notifications">Notifications</label>
+			<ul>
+				<li><label><input type="radio" name="Notifications">Send me email</label></li>
+				<li><label><input type="radio" name="Notifications">Don't send me email</label></li>
+				<li><label><input type="radio" name="Notifications">Send me flowers</label></li>
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<label for="Url">URL</label>
+			<input type="url" placeholder="http://yourdomain.com" class="InputBox" id="Url">
+		</fieldset>
+
+		<fieldset>
+			<label for="Bio">Bio</label>
+			<textarea id="Bio"></textarea>
+		</fieldset>
+		
+		<fieldset class="CheckBox">
+			<label><input type="checkbox">I accept the terms of service and lorem ipsum.</label>
+		</fieldset>
+
+		<fieldset class="Buttons">
+			<input type="submit" value="Submit" class="Button" />
+			<input type="reset" value="Reset" class="Button" />
+		</fieldset>
+	</form>			
+	</div>
+
+	<div class="Row">
+		<h2>Pagination</h2>
+		<nav class="Page">
+			<ul>
+				<li class="Prev"><a href="#">← Prev</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li class="Next"><a href="#">Next →</a></li>
+			</ul>
+		</nav>			
+				
+	</div>
+	
+	<div class="Row">
+	<h2>Menu</h2>
+		<ul id="Menu" class="" style="margin-bottom: 80px"> <!-- SiteMenu -->
+		<li><a href="index.html">Home</a>
+		</li>
+		<li><a href="news.html">News</a>
+			<ul>
+				<li><a href="news.html">Category 1</a></li>
+				<li><a href="news.html">Category 2</a></li>
+			</ul>
+		</li>
+		<li><a href="about.html">Information</a>
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contacts.html">Contacts</a></li>
+				<li><a href="teachers.html">Our teachers</a></li>
+			</ul>
+		</li>
+
+		</ul>
+
+	</div>
+	
+	<div class="Row">
+	<h2>Tabs</h2>
+	
+	<nav role="navigation">
+	<ul class="Tabs">
+		<li><a href="#">This is a link</a></li>
+		<li class="Active"><a href="#">Active Tab</a></li>
+		<li><a href="#">Lorem link</a></li>
+		<li><a href="#">Dolor link two</a></li>
+		<li><a href="#">Here is a link</a></li>
+	</ul>
+</nav>
+	<div class="TabPane">
+		TabPane content.
+	</div>
+
+	</div>
+	
+	<div class="Row">
+		<h2>FontSize</h2>
+<div class="Tiny">Tiny Font Size</div>
+<div class="Small">Small Font Size</div>
+<div class="Normal">Normal Font Size</div>
+<div class="Medium">Medium Font Size</div>
+<div class="Big">Big Font Size</div>
+<div class="Huge">Huge Font Size</div>
+	</div>
+	
+
+<div class="Row">
+	<h2>Effects</h2>
+
+<p id="foo"><a href="#foo">Foo</a></p>
+<p id="bar"><a href="#bar">Bar</a></p>
+
+</div>
+
+
+	<div class="Row LoadingExamples">
+		<h2>Loading examples</h2>
+
+		<div class="Loading">Loading</div>
+
+		<div class="Clear">
+			<span class="NormalProgress">NormalProgress</span>
+		</div>	
+
+		<div class="Clear">
+			<span class="TinyProgress">Some TinyProgress</span>
+		</div>	
+
+		<div class="Clear">
+			InProgress NormalProgress: "<span class="InProgress NormalProgress">NormalProgress</span>"
+			<br />
+			InProgress TinyProgress: "<span class="InProgress TinyProgress">TinyProgress</span>"
+		</div>
+	</div>
+
+
+	<div class="Row">
+		<h2>Messages</h2>
+		<div class="Message Info">Message Info</div>
+		<div class="Message Casual">Message Casual</div>
+		<div class="Message Alert">Message Alert</div>
+		<div class="Message Warning">Message Warning</div>
+	</div>
+
+
+
+	</div>
 </body>
 </html>
