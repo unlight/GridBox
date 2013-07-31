@@ -168,7 +168,8 @@ fieldset p.Help {
 .Button.FileInput {
 	position: relative;
 	overflow: hidden;
-	vertical-align: -50%;
+	display: inline;
+	/*vertical-align: -50%;*/
 }
 
 @media screen and (max-width: 600px) {
