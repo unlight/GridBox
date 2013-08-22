@@ -151,25 +151,29 @@ fieldset p.Help {
 	margin: 0;
 	border: solid transparent;
 	border-width: 0 0 100px 200px;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	-moz-opacity: 0;
-	-khtml-opacity: 0;
 	opacity: 0;
-	direction: ltr;
-	cursor: pointer;
+	filter: alpha(opacity=0);
 	-webkit-transform: translate(-300px, 0) scale(4);
 	-moz-transform: translate(-300px, 0) scale(4);
 	-ms-transform: translate(-300px, 0) scale(4);
 	-o-transform: translate(-300px, 0) scale(4);
 	transform: translate(-300px, 0) scale(4);
+	direction: ltr;
+	cursor: pointer;
 }
 
 .Button.FileInput {
 	position: relative;
 	overflow: hidden;
-	display: inline;
+	display: inline-block; /* Important */
 	/*vertical-align: -50%;*/
+}
+
+.UploadedFile {
+	display: inline-block; 
+	float: left;
+	margin: 0 10px 0 0;
+	line-height: 150%;
 }
 
 @media screen and (max-width: 600px) {
