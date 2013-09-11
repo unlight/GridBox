@@ -1,0 +1,14 @@
+.PanelInfo {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.PanelInfo li a {
+	display: inline-block;
+}
+
+
+.PanelInfo li .Aside {
+	float: right;
+}
