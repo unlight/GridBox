@@ -1,0 +1,9 @@
+.Debug { outline: 1px dashed #0080ff; }
+.Debug * { outline: 1px dotted red; }
+.Debug * * { outline: 1px dotted green; }
+.Debug * * * { outline: 1px dotted orange; }
+.Debug * * * * { outline: 1px dotted blue; }
+.Debug * * * * * { outline: 1px solid red; }
+.Debug * * * * * * { outline: 1px solid green; }
+.Debug * * * * * * * { outline: 1px solid orange; }
+.Debug * * * * * * * * { outline: 1px solid blue; }
