@@ -1,0 +1,47 @@
+.Tabs2
+{
+    padding: 7px 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+/*    padding-bottom: 5px;
+    overflow: hidden;*/
+}
+        
+.Tabs2 li
+{
+    display: inline;
+    margin: 0;
+    margin-right: 8px;
+}
+        
+.Tabs2 li a
+{
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 7px 16px;
+    border: 1px solid #ccc;
+    border-bottom-color: #B7B7B7;
+    color: #000;
+    background: #F0F0F0;
+    border-radius: 6px 6px 0px 0px;
+    outline: none;
+ }
+
+.Tabs2 li a:hover
+{
+    border: 1px solid #B7B7B7;
+    background: #E0E0E0;
+}
+        
+.Tabs2 li.Active a
+{
+    position: relative;
+    top: 0px;
+    font-weight: bold;
+    background: white;
+    border: 1px solid #B7B7B7;
+    border-bottom-color: white;
+}
