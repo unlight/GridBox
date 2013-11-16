@@ -1,0 +1,20 @@
+.NumericList {
+	list-style: decimal;
+	list-style-position: inside;
+	margin: 10px 0;
+}
+
+.NormalList {
+	list-style: disc;
+	list-style-position: inside;
+	margin: 10px 0;
+}
+
+.TreeList {
+	list-style-position: inside;
+}
+
+.TreeList ol, .TreeList ul {
+	list-style-position: inside;
+	margin: 10px 0 10px 40px;
+}
