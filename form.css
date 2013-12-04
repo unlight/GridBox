@@ -173,6 +173,7 @@ fieldset p.Help {
 	overflow: hidden;
 	display: inline-block; /* Important */
 	/*vertical-align: -50%;*/
+	vertical-align: middle;
 }
 
 .UploadedFile {
