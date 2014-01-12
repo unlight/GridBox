@@ -1,0 +1,25 @@
+{
+  "name": "GridBox",
+  "main": "demo.html",
+  "version": "1.9",
+  "homepage": "https://github.com/unlight/GridBox",
+  "authors": [
+    "S <rv-home.ru>"
+  ],
+  "description": "Grid and other css components.",
+  "keywords": [
+    "css",
+    "grid",
+    "layout"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "~*",
+    "__*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
