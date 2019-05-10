@@ -11,10 +11,6 @@
 	font-weight: bold;
 }
 
-#Menu li {
-	white-space: nowrap;
-}
-
 #Menu a {
 	/*color: #000;*/
 	text-decoration: none;
@@ -24,6 +20,7 @@
 #Menu li {
 	position: relative;
 	text-align: left;
+	white-space: nowrap;
 }
 
 #Menu ul {

@@ -1,7 +1,6 @@
 .Row {
 	margin: 0 auto;
 	overflow: hidden;
-	/*zoom: 1;*/ /* For IE 6/7 (trigger hasLayout) */
 }
 
 /* Width should be defined */

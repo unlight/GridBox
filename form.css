@@ -19,6 +19,12 @@ fieldset label {
 	font-weight: bold;
 }
 
+fieldset label.RightAligned {
+	margin-left: -10px; 
+	margin-right: 10px;
+	text-align: right;
+}
+
 fieldset select {
 	min-width: 25%;
 	margin: 0;
@@ -167,6 +173,7 @@ fieldset p.Help {
 	overflow: hidden;
 	display: inline-block; /* Important */
 	/*vertical-align: -50%;*/
+	vertical-align: middle;
 }
 
 .UploadedFile {
@@ -226,3 +233,4 @@ fieldset label.Required:after {
 	display: inline;
 	margin: 0;
 }
+
